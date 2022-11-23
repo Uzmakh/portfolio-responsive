@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css link -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/354f9f1904.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Flexbox Model</title>
+  </head>
+<!-- The project is from the Ania 12+ hours Coding BootCamp-html & css practice -->
+  <body>
+   <header id="header">
+      <nav>
+        <img class="logo" src="images/youzees.png" alt="youzees" />
+       
+        <ul class="navbar" id="navlist">
+          <li>
+            <a href="#name">About Me</a>
+          </li>
+          <li>
+            <a href="https://github.com/Uzmakh">GitHub</a>
+          </li>
+          <li>
+            <a href="pages/contact.html">Contact Me</a>
+          </li>
+        </ul>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <!-- In this section, the two columns are to be set side-by-side using flex properties. -->
+      <!-- Left column -->
+      <div class="hero-info">
+        <h1 id="name">Uzma Iffat</h1>
+        <p>
+          I am a professional web developer and Youtuber.I love to teach how to
+          Code,Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus expedita porro magnam soluta, tenetur deserunt ipsa iste vel et possimus recusandae explicabo earum asperiores dolor?
+        </p>
+
+        <div class="break"></div>
+
+        <div class="button">Hire Me</div>
+      </div>
+      <!-- Right column -->
+      <div class="hero-right">
+        <img
+          src="images/working1.jpg"
+          class="hero-image"
+          alt="working illustration"
+        />
+      </div>
+    </section>
+    <!-- Hero-section ends -->
+
+    <!-- ABOUT-ME -->
+    <section >
+      <!--  In this section, the two columns are to be set side-by-side using flex properties.
+        The three classes are to be used in css-styling,from this section--->
+      <!-- Left Column -->
+      <div class="about-img"> 
+      <img src="images/working2.jpg" class="avatar" alt="avatar" />
+      </div>
+      <!-- Right Column -->
+      <div class="about-info">
+        <h2>
+          <a name="about-me">About Me</a>
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum iusto
+          vel saepe debitis cum optio asperiores placeat? Autem, sequi! Officia
+          dolorem adipisci nulla suscipit facere!
+        </p>
+      </div>
+   </section>
+    <!-- About-me section ends -->
+
+      <!-- CONTACT-ME Form -->
+      <section>
+        <form action="">
+          <h2>Contact Me</h2>
+          <!--   We put three input types into separate divs (to distinguish them separate). As divs are block-level elements, they keep their content on separate lines in this way. -->
+  
+          <!-- text -->
+          <div class="input-section">
+            <div class="input-group">
+              <label for="first-name">First Name</label>
+              <input
+                type="text"
+                name="first-name"
+                id="first- name"
+                value="first-name"
+              />
+            </div>
+            <div class="input-group">
+              <label for="last-name">Last Name</label>
+              <input
+                type="text"
+                name="last-name"
+                id="last- name"
+                value="last-name"
+              />
+            </div>
+          </div>
+  
+          <!-- radio -->
+          <div class="input-section">
+            <input type="radio" name="select" id="office" value="office" />
+            <label for="office">Office</label>
+            <input type="radio" name="select" id="remote" value="remote" />
+            <label for="remote">Remote</label>
+            <input type="radio" name="select" id="other" value="other" />
+            <label for="other">Other</label>
+          </div>
+  
+          <!-- checkboxes -->
+          <div class="input-section">
+            <input
+              type="checkbox"
+              name="full-time"
+              id="full-time"
+              value="full-time"
+            />
+            <label for="full-time">Full-time</label>
+            <input
+              type="checkbox"
+              name="contract-work"
+              id="contract-work"
+              value="contract-work"
+            />
+            <label for="contract-work">Contract-work</label>
+            <input
+              type="checkbox"
+              name="sponsorship"
+              id="sponsorship"
+              value="sponsorship"
+            />
+            <label for="sponsorship">Sponsorship</label>
+          </div>
+  
+          <input type="submit" value="submit" class="button" />
+        </form>
+    </section>
+
+        <section>
+        <div class="socials">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-github"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+       </section>
+
+   
+    <!-- FOOTER -->
+    <footer>
+      <ul>
+        <li><a href="#about-me">About Me </a></li>
+        <li><a href="pages/contact.html">Contact-me</a></li>
+        <li><a href="https://github.com/Uzmakh">GitHub</a></li>
+      </ul>
+    </footer>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
